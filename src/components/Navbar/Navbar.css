@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  background-color: #1e1e1e;
+}
+
+.navbar .nav-menu {
+  list-style: none;
+}
+
+.navbar .nav-menu a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.navbar .nav-menu a .nav-item {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 2px;
+  border-right: none;
+
+  transition: all 0.5s ease-in-out 0s;
+
+  background: linear-gradient(to top, white 50%, #1e1e1e 50%);
+  background-position: top left;
+  background-size: 100% 100%;
+}
+.navbar .nav-menu a .nav-item:hover,
+.navbar .nav-menu a > .nav-item.active {
+  background-position: left bottom;
+  background-size: 200% 200%;
+  color: black;
+}
+
+.navbar .nav-menu a > .nav-item.active {
+  background: white;
+  color: black;
+}
